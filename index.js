@@ -20,15 +20,24 @@ return `${newObj["itemName"]} has been added to your cart.`
 }
 
 function viewCart() {
-  if(cart.length < 1){
+let items = " ";
+	if(cart.length < 1){
     return "Your shopping cart is empty."
   }
 for(let i = 0; i < cart.length; i++){
-  cart
-  let items = `In your cart, you have ${cart[i]["itemName"]} at $${cart[i]["itemPrice"]}.`
-  cart.push(items)
+if(i === 0){
+	items += "In your cart, you have"
+}
+if(i === cart.length - 1){
+	items += " and" + ` ${cart[i]["itemName"]} at $${cart[i]["itemPrice"]},`
+} else {
+items += ` ${cart[i]["itemName"]} at $${cart[i]["itemPrice"]},`
 }
 
+
+}
+
+  return items
 }
 
 function total() {
