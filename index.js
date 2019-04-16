@@ -30,7 +30,7 @@ newAr.push(`${cart[i]["itemName"]} at $${cart[i]["itemPrice"]}`)
 }
 for(let i = 0; i < newAr.length; i++){
 	if(i === newAr.length - 1)
-	newAr[i] = "and " + newAr[i] + "."
+	newAr[newAr.length - 1] = "and " + newAr[newAr.length - 1] + "."
 }
 
 return "In you cart, you have " + newAr
