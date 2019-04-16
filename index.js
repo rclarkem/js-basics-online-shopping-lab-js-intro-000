@@ -47,7 +47,20 @@ return sum
 }
 
 function removeFromCart(item) {
-  // write your code here
+  if(!cart.indexOf(item)){
+   return "That item is not in your cart."
+	}
+for(let i = 0; i < cart.length; i++){
+	if(cart[i]["itemName"] === item){
+		console.log(i)
+		cart.splice(i,1,)
+
+	}
+
+
+
+}
+return cart
 }
 
 function placeOrder(cardNumber) {
