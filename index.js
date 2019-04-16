@@ -1,6 +1,6 @@
 var cart = [];
 
-function getCart() {
+function getCart(item) {
 let newObj = {
   itemName: item,
   itemPrice : Math.floor(Math.random() * (100 - 1 + 1)) + 1
@@ -21,7 +21,7 @@ function addToCart(item) {
    itemPrice : Math.floor(Math.random() * (100 - 1 + 1)) + 1
 
  }
- cart.push(newObj) your code here
+ cart.push(newObj)r code here
 }
 
 function viewCart() {
