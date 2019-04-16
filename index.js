@@ -1,7 +1,7 @@
 var cart = [];
 
 function getCart(item) {
-let newObj = {
+let cart = {
   itemName: item,
   itemPrice : Math.floor(Math.random() * (100 - 1 + 1)) + 1
 
