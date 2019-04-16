@@ -42,7 +42,7 @@ for(let i = 0; i < newAr.length; i++){
 	newAr[i] = "and " + newAr[i] + "."
 }
 
-return "In you cart, you have " + newAr.join(", ")
+return "In your cart, you have " + newAr.join(", ")
 }
 
 
