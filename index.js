@@ -20,7 +20,7 @@ return `${newObj["itemName"]} has been added to your cart.`
 }
 
 function viewCart() {
-  // write your code here
+
 }
 
 function total() {
