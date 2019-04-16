@@ -20,25 +20,24 @@ return `${newObj["itemName"]} has been added to your cart.`
 }
 
 function viewCart() {
-let items = " ";
-	if(cart.length < 1){
+  if(cart.length < 1){
     return "Your shopping cart is empty."
   }
+	var newAr = []
+	
 for(let i = 0; i < cart.length; i++){
-if(i === 0){
-	items += "In your cart, you have" + ` ${cart[i]["itemName"]} at $${cart[i]["itemPrice"]},`
+newAr.push(`${cart[i]["itemName"]} at $${cart[i]["itemPrice"]}`)
+// console.log(newAr[newAr.length - 1])
+// console.log(items += newAr[0])
 }
-if(i === cart.length - 1){
-	items += " and" + ` ${cart[i]["itemName"]} at $${cart[i]["itemPrice"]},`
-} else {
-items += ` ${cart[i]["itemName"]} at $${cart[i]["itemPrice"]},`
-}
-
-
+for(let i = 0; i < newAr.length; i++){
+	if(i === newAr.length - 1)
+	newAr[i] = "and " + newAr[i] + "."
 }
 
-  return items
+return "In you cart, you have " + newAr.join(", ")
 }
+
 
 function total() {
   // write your code here
