@@ -4,7 +4,7 @@ function getCart(item) {
 let newObj = {
   itemName: item,
   itemPrice : Math.floor(Math.random() * (100 - 1 + 1)) + 1
-  cart.push(newObj)
+  
 }
  return cart;
 }
