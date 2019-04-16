@@ -16,7 +16,7 @@ function addToCart(item) {
    itemPrice : Math.floor(Math.random() * (100 - 1 + 1)) + 1
  };
  cart.push(newObj)
-return `${newObj["itemName"]} has been added to your cart.`
+return cart
 }
 
 function viewCart() {
@@ -28,12 +28,12 @@ function viewCart() {
 for(let i = 1; i < cart.length; i++){
 newAr.push(`${cart[i]["itemName"]} at $${cart[i]["itemPrice"]}`)
 }
-for(let i = 0; i < newAr.length; i++){
-	if(i === newAr.length - 1)
-	newAr[newAr.length - 1] = "and " + newAr[newAr.length - 1] + "."
-}
+// for(let i = 0; i < newAr.length; i++){
+// 	if(i === newAr.length - 1)
+// 	newAr[newAr.length - 1] = "and " + newAr[newAr.length - 1] + "."
+// }
 
-return "In you cart, you have " + newAr
+return  newAr.join(", ")
 }
 
 
