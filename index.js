@@ -51,7 +51,7 @@ for(let i = 0; i < cart.length; i++){
 	if(cart[i]["itemName"] === item){
 		console.log(i)
 		cart.splice(i,1,)
-  } else if(!cart[i]['itemName']){
+  } else if(cart[i]['itemName'] !== item){
     // if(!cart.indexOf(item)){
      return "That item is not in your cart."
     // }
