@@ -46,7 +46,6 @@ for(let i = 0; i < cart.length; i++){
 return sum
 }
 
-function removeFromCart(item) {
   function removeFromCart(item) {
     if(!cart.indexOf(item)){
      return "That item is not in your cart."
