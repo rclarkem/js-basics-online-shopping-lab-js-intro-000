@@ -20,20 +20,24 @@ return cart
 }
 
 function viewCart() {
-  if(cart.length < 1){
+let final
+let items = " ";
+	if(cart.length < 1){
     return "Your shopping cart is empty."
   }
-	var newAr = ["In your cart, you have"]
+	var newAr = []
 
-for(let i = 1; i < cart.length; i++){
+for(let i = 0; i < cart.length; i++){
 newAr.push(`${cart[i]["itemName"]} at $${cart[i]["itemPrice"]}`)
+// console.log(newAr[newAr.length - 1])
+// console.log(items += newAr[0])
 }
-// for(let i = 0; i < newAr.length; i++){
-// 	if(i === newAr.length - 1)
-// 	newAr[newAr.length - 1] = "and " + newAr[newAr.length - 1] + "."
-// }
+for(let i = 0; i < newAr.length; i++){
+	if(i === newAr.length - 1)
+	newAr[i] = "and " + newAr[i] + "."
+}
 
-return  newAr.join(", ")
+return "In you cart, you have " + newAr.join(", ")
 }
 
 
