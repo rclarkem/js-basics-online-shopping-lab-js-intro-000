@@ -26,7 +26,7 @@ let items = " ";
   }
 for(let i = 0; i < cart.length; i++){
 if(i === 0){
-	items += "In your cart, you have"
+	items += "In your cart, you have" + ` ${cart[i]["itemName"]} at $${cart[i]["itemPrice"]},`
 }
 if(i === cart.length - 1){
 	items += " and" + ` ${cart[i]["itemName"]} at $${cart[i]["itemPrice"]},`
