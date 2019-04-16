@@ -17,6 +17,7 @@ function addToCart(item) {
 
  }
  cart.push(newObj)
+ console.log(cart)
 }
 
 function viewCart() {
