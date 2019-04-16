@@ -24,7 +24,7 @@ function viewCart() {
     return "Your shopping cart is empty."
   }
 	var newAr = []
-	
+
 for(let i = 0; i < cart.length; i++){
 newAr.push(`${cart[i]["itemName"]} at $${cart[i]["itemPrice"]}`)
 // console.log(newAr[newAr.length - 1])
