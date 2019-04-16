@@ -24,7 +24,9 @@ function viewCart() {
     return "Your shopping cart is empty."
   }
 for(let i = 0; i < cart.length; i++){
-  return `In your cart, you have ${cart[i]["itemName"]} at $${cart[i]["itemPrice"]}.`
+  cart
+  let items = `In your cart, you have ${cart[i]["itemName"]} at $${cart[i]["itemPrice"]}.`
+  cart.push(items)
 }
 }
 
