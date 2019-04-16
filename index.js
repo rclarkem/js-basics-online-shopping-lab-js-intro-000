@@ -27,15 +27,13 @@ function viewCart() {
 
 for(let i = 0; i < cart.length; i++){
 newAr.push(`${cart[i]["itemName"]} at $${cart[i]["itemPrice"]}`)
-// console.log(newAr[newAr.length - 1])
-// console.log(items += newAr[0])
 }
 for(let i = 0; i < newAr.length; i++){
 	if(i === newAr.length - 1)
 	newAr[i] = "and " + newAr[i] + "."
 }
 
-return "In you cart, you have " + newAr.join(", ")
+return "In you cart, you have " + newAr
 }
 
 
