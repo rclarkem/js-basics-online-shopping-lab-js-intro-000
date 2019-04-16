@@ -16,7 +16,7 @@ function addToCart(item) {
    itemPrice : Math.floor(Math.random() * (100 - 1 + 1)) + 1
  };
  cart.push(newObj)
-return cart
+return `${newObj["itemName"]} has been added to your cart.`
 }
 
 function viewCart() {
@@ -24,8 +24,13 @@ let final
 let items = " ";
 	if(cart.length < 1){
     return "Your shopping cart is empty."
-  }
-	var newAr = []
+  } else if (cart.length === 1){
+		return `In your cart, you have ${cart[0]["itemName"]} at $${cart[0]["itemPrice"]}.`
+	} else {
+		var newAr = []
+	}
+
+
 
 for(let i = 0; i < cart.length; i++){
 newAr.push(`${cart[i]["itemName"]} at $${cart[i]["itemPrice"]}`)
