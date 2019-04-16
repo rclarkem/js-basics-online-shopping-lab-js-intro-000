@@ -28,7 +28,7 @@ for(let i = 0; i < cart.length; i++){
   let items = `In your cart, you have ${cart[i]["itemName"]} at $${cart[i]["itemPrice"]}.`
   cart.push(items)
 }
-return cart
+
 }
 
 function total() {
